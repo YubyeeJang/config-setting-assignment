@@ -129,6 +129,16 @@ th .button {
   background-color: $odd-row;
 }
 
+.table--secondary tr td.table__notification {
+  background-color: $ui-02;
+  text-align: left;
+}
+
+.table--secondary .table__notification .notification-message {
+  justify-content: left;
+  padding-left: $spacing-2xs;
+}
+
 .table--secondary tr:hover > td {
   background: $ui-01;
 }
@@ -235,11 +245,25 @@ th .button {
   margin-left: auto;
 }
 
+.table__toolbar-filter {
+  display: flex;
+  align-items: center;
+}
+
 .table__toolbar-title {
   @include text-overflow();
   @include font-weight("regular");
   @include font-size("13");
   @include line-height("heading");
+  color: $text-02;
+}
+
+.table__result-count-text {
+  color: $text-02;
+}
+
+.table__result-count-filtered-text {
+  margin-left: $spacing-xs;
   color: $text-02;
 }
 
@@ -284,37 +308,32 @@ th .button {
 // -------------------------
 // table summary, details
 // -------------------------
-.table__summary-target {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.table__summary {
+  .table__summary-target {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .table__summary-icon {
+      display: inline-flex;
+    }
+  }
+
+  .table__summary-target-text:hover {
+    text-decoration: underline;
+  }
 }
 
 .table__summary-target-text {
   @include text-overflow;
 }
 
-.table__summary-target-text:hover {
-  text-decoration: underline;
-}
-
 .table__summary-icon {
   display: none;
-}
-
-.table__details {
-  display: none;
-}
-
-.table__summary:hover .table__summary-icon {
-  display: inline-flex;
+  margin-left: auto;
 }
 
 .table__summary--selected .table__summary-icon {
   display: inline-flex;
   transform: rotate(-180deg);
-}
-
-.table__summary--selected + .table__details {
-  display: table-row;
 }

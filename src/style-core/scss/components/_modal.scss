@@ -37,6 +37,11 @@
   color: $text-02;
 }
 
+.modal__head-tooltip{
+  margin-left: $spacing-3xs;
+  margin-bottom: $spacing-3xs;
+}
+
 .modal__head-toolbar ~ .modal__head-close-button {
   margin-left: $spacing-sm;
 }
@@ -122,8 +127,9 @@
 // modal 하위에 있는 form, tab overwrite
 // -------------------------
 
+// $spacing-sm / 2 = 6px
 .modal .form__item {
-  padding: $spacing-sm / 2 0;
+  padding: $spacing-sm * .5 0;
 }
 
 .modal .form--lg .form__item {
@@ -136,6 +142,7 @@
 
 .modal .form__label-text {
   @include font-weight("regular");
+  letter-spacing: -1px;
 }
 
 .modal .form__label {
@@ -148,7 +155,19 @@
 
 .modal .form--vertical .form__detail {
   @include line-height("body");
-  margin-top: $spacing-2xs;
+  margin-top: $spacing-xs;
+}
+
+.modal .form--vertical .form__item{
+    padding: $spacing-sm 0;
+  
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
 }
 
 .modal .form--complex .text-input {

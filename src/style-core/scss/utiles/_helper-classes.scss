@@ -68,6 +68,10 @@
   & > *:not(:last-child) {
     margin-bottom: $spacing-2xs;
   }
+
+  & + & {
+    margin-top: $spacing-2xs;
+  }
 }
 
 .h-group {
@@ -83,7 +87,6 @@
 .h-group .select {
   width: auto;
 }
-
 
 .h-group--half .h-group__item {
   width: 50%;
@@ -140,12 +143,20 @@
   flex-wrap: wrap;
 }
 
+.ml-8 {
+  margin-left: $spacing-xs;
+}
+
 .ml-auto {
   margin-left: auto !important;
 }
 
 .mr-auto {
   margin-right: auto !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
 }
 
 .mt-auto {
@@ -180,8 +191,8 @@
 }
 
 .my-0 {
-  margin-bottom: 0 !important !important;
-  margin-top: 0 !important !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 
 // .seaching-select-disable 클래스를 개선
@@ -208,6 +219,10 @@
 
 .w-120 {
   width: rem(120px) !important;
+}
+
+.w-130 {
+  width: rem(130px) !important;
 }
 
 .w-160 {
@@ -354,7 +369,8 @@
 // font-style
 // -------------------------
 
-.text-bold {
+.text-bold,
+.text-bold p {
   font-weight: 700;
 }
 
@@ -431,7 +447,6 @@
   word-break: break-all;
 }
 
-
 .ellipsis-end {
   display: inline-block;
   text-overflow: ellipsis;
@@ -450,6 +465,10 @@
   -webkit-box-orient: vertical;
 }
 
+.text-negative {
+  color: $negative;
+}
+
 .caption-out {
   @include caption-out;
 }
@@ -460,4 +479,46 @@
 
 .not-scroll {
   @include not-scroll;
+}
+
+// element 사이 구분선
+.division-element {
+  position: relative;
+  margin-left: rem(20px) !important;
+  &:after {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 50%;
+    margin-top: -8px;
+    width: 1px;
+    height: 17px;
+    background-color: $ui-04;
+  }
+
+  &.division-element--lg {
+    margin-left: rem(24px) !important;
+
+    &:after {
+      margin-top: -11px;
+      height: 22px;
+      left: -13px;
+    }
+  }
+}
+
+// -------------------------
+// icon fill
+// -------------------------
+
+.svg-icon.svg-icon--primary{
+  fill: $primary;
+}
+
+.svg-icon.svg-icon--secondary{
+  fill: $secondary
+}
+
+.svg-icon.svg-icon--negative{
+  fill: $negative;
 }

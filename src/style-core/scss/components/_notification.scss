@@ -79,25 +79,39 @@
   }
 
   &__text {
-    @include line-height("heading");
+    @include line-height("title");
     @include font-size("24");
     color: $text-02;
+    text-align: center;
   }
 
   &__detail {
-    margin-top: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
     .notification {
       justify-content: center;
+      margin-top: $spacing-xl;
+    }
+
+    .button {
+      margin-top: $spacing-xl;
     }
   }
 
   &__subtext {
     @include font-size("18");
     @include font-weight("light");
-
+    margin-top: $spacing-sm;
     color: $text-03;
+    text-align: center;
+
+    + .button {
+      margin-top: $spacing-md;
+    }
   }
 
   &--info {
@@ -171,6 +185,7 @@
 
 .notification__text {
   @include font-size("14");
+  color: $text-02;
 }
 
 .notification--info {
@@ -210,4 +225,27 @@
 // -------------------------
 .notification-full {
   @include notification-full;
+}
+
+// -------------------------
+// Notification Full - sm
+// -------------------------
+
+.notification-full--sm{
+
+  .notification-full__icon{
+    width: rem(36px);
+    height: rem(36px);
+    margin-bottom: $spacing-xs;
+  }
+
+  .notification-full__text{
+    @include font-size("18");
+  }
+
+  .notification-full__subtext{
+    @include font-size("12");
+    margin-top: $spacing-xs;
+  }
+
 }

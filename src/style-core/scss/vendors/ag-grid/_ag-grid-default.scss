@@ -1,9 +1,6 @@
-/*.ag-theme-default {
-  background-color: white;
-  color: black;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 14px; }*/
+// -------------------------
+// default Theme Customizing
+// -------------------------
 .ag-theme-default {
   @include font-weight("regular");
   background-color: $ui-02;
@@ -1038,9 +1035,11 @@ input[type="radio"] {
     display: flex;
     height: 100%; }*/
 .ag-theme-default .ag-header-cell-label {
-  display: flex;
-  justify-content: center;
+  display: table;
+  table-layout: fixed;
   height: 100%;
+  width: 100%;
+  line-height: 30px;
   padding: 0 8px;
 }
 
@@ -1056,9 +1055,7 @@ input[type="radio"] {
 }
 
 .ag-theme-default .ag-header-cell-label .ag-header-cell-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding-right: $spacing-2xs;
 }
 
 .ag-theme-default .ag-numeric-header .ag-header-cell-label {
@@ -1121,10 +1118,21 @@ input[type="radio"] {
     padding-left: 11px;
     padding-right: 11px; }*/
 .ag-theme-default .ag-cell {
+  display: table;
+  table-layout: fixed;
   height: 100%;
   line-height: 30px;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.ag-theme-default .ag-cell > span,
+.ag-theme-default .ag-header-cell-label > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.25;
 }
 
 .ag-theme-default .ag-row-drag {
@@ -3230,11 +3238,15 @@ input[type="radio"] {
   background-position-y: 0 !important;
 }
 
-.ag-overlay-wrapper {
+.ag-theme-default .ag-overlay-wrapper {
   background-color: rgba($ui-01, 0.6);
 }
 
-.ag-overlay-no-rows-center {
+.ag-theme-default .ag-overlay-no-rows-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: 1px solid $ui-04;
   background: $ui-01;
   border-radius: 3px;

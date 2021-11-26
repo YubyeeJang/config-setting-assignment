@@ -20,9 +20,7 @@
 
 .list__head-title {
   @include font-weight("medium");
-  @include text-overflow(100%);
-  display: flex;
-  align-items: center;
+  @include text-overflow;
   color: $text-02;
   margin-bottom: $spacing-3xs;
 }
@@ -65,6 +63,22 @@
 
 .list__item .filter-highlight {
   @include line-height("body");
+}
+
+.list__item-notification {
+  @include stable-padding($spacing-2xs, $spacing-xs);
+  margin: 0 auto;
+  height: rem(40px);
+}
+
+.list__button .list__icon {
+  width: rem(24px);
+  height: rem(24px);
+}
+
+.list__button .list__subicon {
+  width: rem(20px);
+  height: rem(20px);
 }
 
 .list__subtext {
@@ -130,13 +144,13 @@
 }
 
 .list__details-item-trigger-layer {
-  @include text-overflow;
+  @include text-overflow(block);
   @include font-size("12");
   color: $text-03;
 }
 
 .list__details-item-trigger-text {
-  @include text-overflow;
+  @include text-overflow(block);
 }
 
 .list__details-item-component {
@@ -148,7 +162,7 @@
 }
 
 .list__details-item-component-text {
-  @include text-overflow;
+  @include text-overflow(block);
   margin-left: $spacing-2xs;
 }
 
@@ -301,4 +315,74 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 2rem;
+}
+
+.list--lg .list__item {
+  height: rem(40px);
+}
+
+// -------------------------
+// list--stripe
+// -------------------------
+
+.list--stripe {
+  .list__item {
+    border-bottom: none;
+
+    &:nth-child(2n + 1) {
+      .list__button {
+        background: $odd-row;
+      }
+    }
+
+    &:hover {
+      background: $hover-row;
+
+      .list__button {
+        background: $hover-row;
+      }
+    }
+
+    &.list__item--selected {
+      .list__text {
+        color: $primary;
+      }
+    }
+
+    &.list__item--disabled {
+      .list__button {
+        background: transparent;
+      }
+
+      &:hover {
+        background: transparent;
+
+        .list__button {
+          background: transparent;
+        }
+      }
+
+      .list__button {
+        &:active {
+          .list__text {
+            color: $text-03;
+          }
+        }
+      }
+    }
+
+    &.list__item--selected.list__item--disabled{
+      .list__button{
+        &:active{
+          .list__text{
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .list__text {
+    color: $text-03;
+  }
 }
