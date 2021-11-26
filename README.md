@@ -16,11 +16,11 @@ Webpack 번들링 후 생성되는 최종 output 폴더
 
 작업자가 실제로 작성하는 폴더
 
-\*\*src/style-core\*\*
+**_src/style-core_**
 
 - Git Subtree 로 등록한 IRIS-Design-Core 레파지토리 코드가 담겨있는 폴더
 
-\*\*src/views\*\*
+**_src/views_**
 
 - 필요에 따라서 영역 별로 모듈화 시켜서 마크업 작성이 가능
 
