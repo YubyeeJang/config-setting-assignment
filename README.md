@@ -1,1 +1,28 @@
-# config-setting assignment
+# 환경설정, 회원가입 모달 과제
+
+## 폴더 설명
+
+### dist
+
+Webpack 번들링 후 생성되는 최종 output
+npm run dev 명령어를 입력하면 한번 삭제되고, 최신 src 코드로 번들링 된다.
+
+### src
+
+작업자가 실제로 작업하는 공간
+
+#### src/style-core
+
+Git Subtree 로 등록한 IRIS-Design-Core 레파지토리 코드가 담겨있는 폴더
+
+#### src/views
+
+필요에 따라서 영역 별로 모듈화 시켜서 마크업 작성이 가능
+
+### views
+
+src/views에서 분리시켜 작업한 html 코드가 통합되어 나오는 output
+
+## 참고
+
+- style-core는 수정, 변경하지 않고 컴포넌트 단위를 참고해서 클래스를 가져다 씁니다.
