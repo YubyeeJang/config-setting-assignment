@@ -43,8 +43,8 @@ $enable-grid-classes: true !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
@@ -61,3 +61,6 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 0 !default;
 $grid-row-columns: 6 !default;
 $gutters: $spacers !default;
+
+// layout
+$editor-layout-body__side-penal: 300px !default;

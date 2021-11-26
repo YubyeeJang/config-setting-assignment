@@ -69,6 +69,7 @@
 
 .upload__input {
   @include text-input;
+  @include text-overflow;
   height: 100%;
   border-radius: 0;
 
@@ -412,7 +413,6 @@
 
 .upload-drag__description-text {
   @include font-size("18");
-  @include font-weight("bold");
   color: $text-03;
   text-align: center
 }
