@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+}
+.top-bar {
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.top-bar__head {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.top-bar button .svg-icon {
+  fill: $inverse-01;
+}
+
+// top-bar__logo
+.top-bar__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    width: 68px;
+  }
+}
+.top-bar__logo::after {
+  width: 1px;
+  height: 16px;
+  background-color: $text-04;
+  content: "";
+  clear: both;
+  margin-left: $layout-sm;
+}
+
+// gnb
+.gnb {
+  display: flex;
+  justify-content: flex-start;
+}
+.gnb__button {
+  padding: 15px 16px;
+  color: $text-04;
+  font-size: 15px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  &.gnb__button--active {
+    border-bottom: 3px solid $secondary;
+  }
+}
+.button__text {
+  font-weight: 600;
+  color: $text-04;
+}
+
+// top-bar__toolbar
+.top-bar__toolbar {
+  display: flex;
+  justify-content: flex-start;
+  .svg-icon {
+    width: 24px;
+  }
+}
+.top-bar__toolbar-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top-bar__toolbar-button {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.button-move {
+  background-color: $secondary;
+  height: 100%;
+  padding: 0 5px;
+}
+.top-bar__toolbar-button > * {
+  margin-right: 8px;
+}
+.top-bar__toolbar-button > *:last-child {
+  margin: 0;
+}
+
+// selector
+.top-bar__toolbar-item--open {
+  .select-container {
+    display: block;
+  }
+}
+
+// title
+.head_title {
+  width: 100%;
+  padding: 8px 20px;
+}
+
+// button 공통
+button {
+  cursor: pointer;
+}

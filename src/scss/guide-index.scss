@@ -3,4 +3,8 @@ $font-path: "/src/style-core/fonts/";
 
 @import "/src/style-core/scss/core-index.scss";
 
-@import "./sample/sample.scss";
+@import "./index--footer.scss";
+@import "./index--body.scss";
+@import "./index--header.scss";
+@import "./modal.scss";
+@import "./common.scss";

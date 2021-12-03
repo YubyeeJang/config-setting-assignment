@@ -1,0 +1,34 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: $layout-2xs;
+  background-color: $ui-01;
+  height: 100%;
+  .form__body {
+    padding: $layout-sm;
+    background-color: $ui-02;
+  }
+}
+.form__item {
+  align-items: center;
+}
+.form__label {
+  width: 200px;
+}
+.text-input {
+  width: 604px;
+  margin-right: $spacing-2xs;
+}
+.text-input--essential {
+  color: $negative;
+  margin-right: $spacing-2xs;
+}
+.notification-message {
+  margin-left: $spacing-2xs;
+}
+.form__foot > * {
+  margin-right: $spacing-2xs;
+}
+.form__foot > *:last-of-type {
+  margin-right: 0;
+}

@@ -1,5 +1,54 @@
 <!-- modal__body -->
-<div class="modal__body modal__body--lg">
-  contents
+<div class="modal__body modal__body--md">
+  <form class="form__body">    
+    <div class="form__list form form--vertical">
+      <div class="form__item checkbox checkbox--lg form__item--border">
+        <input type="checkbox" class="checkbox__input" id="check-1" value="label">
+        <label class="checkbox__label" for="check-1">          
+            이메일 수신(선택)을 포함 전체 동의
+        </label>
+      </div>
+      <div class="form__item checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-2" value="label">
+        <label class="checkbox__label" for="check-2">          
+            <span class="checkbox__label--essential">(필수)</span>
+            만 14세 이상입니다.
+        </label>
+      </div>
+      <div class="form__item checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-3" value="label">
+        <label class="checkbox__label" for="check-3">
+            <span class="checkbox__label--essential">(필수)</span>
+            개인정보 취급방침          
+        </label>
+        <div class="form__detail">
+          <textarea class="form__detail-textarea text-area text-area--fixed">개인정보 취급방침 내용입니다.</textarea>
+        </div>        
+      </div>
+      <div class="form__item checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-4" value="label">
+        <label class="checkbox__label" for="check-4">          
+            <span class="checkbox__label--essential">(필수)</span>
+            이용약관
+        </label>
+        <div class="form__detail">
+          <textarea class="form__detail-textarea text-area text-area--fixed">이용약관 내용입니다.</textarea>
+        </div>        
+      </div>
+      <div class="form__item checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-5" value="label">
+        <label class="checkbox__label" for="check-5">
+            <span>(선택)</span>
+            이메일 수신 동의          
+        </label>
+        <div class="notification-message notification-message-status">
+          <svg class="notification-message__icon svg-icon" aria-hidden="true">
+            <use xlink:href="#info-fill"></use>
+          </svg>
+          <span class="notification-message__text">수신 동의 시에만, 입찰정보 일일 리포트를 메일로 받으실 수 있습니다.</span>
+        </div>
+      </div>
+    </div>   
+  </form>
 </div>
 <!-- // modal__body -->

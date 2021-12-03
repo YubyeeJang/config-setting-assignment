@@ -1,4 +1,81 @@
 <!-- header -->
 <header class="header">
-  HEADER
+  <div class="top-bar">
+    <div class="top-bar__head">
+      <h1 class="top-bar__logo">
+        <svg class="svg-icon" aria-hidden="true">
+          <use xlink:href="#iris-logo"></use>
+        </svg>
+      </h1>
+      <ul class="gnb">
+        <li class="gnb__item">
+          <button class="gnb__button button-base">
+            <span class="button__text">개인설정</span>
+          </button>
+        </li>
+        <li class="gnb__item">
+          <button class="gnb__button gnb__button--active button-base">
+            <span class="button__text">유저정보</span>
+          </button>          
+        </li>       
+      </ul>
+    </div>
+    <div class="top-bar__toolbar">
+      <div class="top-bar__toolbar-item">
+        <button class="top-bar__toolbar-button button-base button--icon button-move">
+          <svg class="svg-icon" aria-hidden="true">
+            <use xlink:href="#chevron-left"></use>
+          </svg>
+        </button>
+        <button class="top-bar__toolbar-button button-base button--icon button-move">
+          <svg class="svg-icon" aria-hidden="true">
+            <use xlink:href="#chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="top-bar__toolbar-item">
+        <button class="top-bar__toolbar-button button-base">
+          <svg class="svg-icon" aria-hidden="true">
+            <use xlink:href="#help-outline"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="top-bar__toolbar-item select">        
+        <!-- top-bar__toolbar-item--open 클래스 추가시 select-container 스타일 display: block; -->
+        <div>
+            <button class="top-bar__toolbar-button select-selector__button button-base">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="#global"></use>
+              </svg>  
+              <span class="select-selector__title button__text">한국어</span>
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="#chevron-down-medium"></use>
+              </svg>
+            </button>                    
+            <ul class="select-container">
+                <li class="select-container__item">
+                    <button class="select-container__button select-container__subtext button-base">한국어</button>
+                </li>
+                <li class="select-container__item">
+                    <button class="select-container__button select-container__subtext button-base">영어</button>
+                </li>                    
+            </ul>
+        </div>  
+      </div>
+      <div class="top-bar__toolbar-item">
+        <button class="top-bar__toolbar-button button-base">
+          <span class="button__text">root</span>
+          <svg class="svg-icon" aria-hidden="true">
+            <use xlink:href="#app-switcher"></use>
+          </svg>
+        </button>
+      </div>      
+    </div>
+  </div>  
+  <div class="breadcrumb">
+    <span>유저정보</span>
+  </div>
+  <div class="head_title">
+    <h2 class="heading-04 ">유저 정보</h2>
+  </div>
 </header>
