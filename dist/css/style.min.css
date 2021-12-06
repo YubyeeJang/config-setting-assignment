@@ -17707,6 +17707,11 @@ main {
   background-color: #ffffff;
 }
 
+.body_title {
+  width: 100%;
+  padding: 0 0 8px 20px;
+}
+
 .form__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -17871,11 +17876,6 @@ main {
 
 .top-bar__toolbar-item--open .select-container {
   display: block;
-}
-
-.head_title {
-  width: 100%;
-  padding: 8px 20px;
 }
 
 button {

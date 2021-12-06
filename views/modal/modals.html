@@ -10,88 +10,96 @@
 </head>
 
 <body>
-  <div class="modal-container">
-    <div class="modal modal--sm" style="position: static;">
-      <!-- modal__head -->
-      <div class="modal__head">
-        <div class="modal__head-title">
-          <span class="modal__head-title-text">회원가입 신청</span>
-          <span class="modal__head-close-button">
-            <button class="button button--icon button--link button--sm">
-              <svg class="svg-icon" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-            </button>
-          </span>
-        </div>
+  <div class="modal modal--sm" style="position: static;">
+    <!-- modal__head -->
+    <div class="modal__head">
+      <div class="modal__head-title">
+        <span class="modal__head-title-text">회원가입 신청</span>
+        <span class="modal__head-close-button">
+          <button class="button button--icon button--link button--sm">
+            <svg class="svg-icon" aria-hidden="true">
+              <use xlink:href="#close"></use>
+            </svg>
+          </button>
+        </span>
       </div>
-      <!-- // modal__head -->
+    </div>
+    <!-- // modal__head -->
 
-      <!-- modal__body -->
-      <div class="modal__body modal__body--md">
-        <form class="form__body">
-          <div class="form__list form form--vertical">
-            <div class="form__item checkbox checkbox--lg form__item--border">
+    <!-- modal__body -->
+    <div class="modal__body modal__body--md form form--vertical">
+      <form class="form__body">
+        <div class="form__list">
+          <div class="form__item form__item--border">
+            <div class="checkbox checkbox--lg ">
               <input type="checkbox" class="checkbox__input" id="check-1" value="label">
               <label class="checkbox__label" for="check-1">
                 이메일 수신(선택)을 포함 전체 동의
               </label>
             </div>
-            <div class="form__item checkbox">
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
               <input type="checkbox" class="checkbox__input" id="check-2" value="label">
               <label class="checkbox__label" for="check-2">
                 <span class="checkbox__label--essential">(필수)</span>
                 만 14세 이상입니다.
               </label>
             </div>
-            <div class="form__item checkbox">
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
               <input type="checkbox" class="checkbox__input" id="check-3" value="label">
               <label class="checkbox__label" for="check-3">
                 <span class="checkbox__label--essential">(필수)</span>
                 개인정보 취급방침
               </label>
-              <div class="form__detail">
-                <textarea class="form__detail-textarea text-area text-area--fixed">개인정보 취급방침 내용입니다.</textarea>
-              </div>
             </div>
-            <div class="form__item checkbox">
+            <div class="form__detail">
+              <textarea class="form__detail-textarea text-area text-area--fixed">개인정보 취급방침 내용입니다.</textarea>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
               <input type="checkbox" class="checkbox__input" id="check-4" value="label">
               <label class="checkbox__label" for="check-4">
                 <span class="checkbox__label--essential">(필수)</span>
                 이용약관
               </label>
-              <div class="form__detail">
-                <textarea class="form__detail-textarea text-area text-area--fixed">이용약관 내용입니다.</textarea>
-              </div>
             </div>
-            <div class="form__item checkbox">
+            <div class="form__detail">
+              <textarea class="form__detail-textarea text-area text-area--fixed">이용약관 내용입니다.</textarea>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
               <input type="checkbox" class="checkbox__input" id="check-5" value="label">
               <label class="checkbox__label" for="check-5">
                 <span>(선택)</span>
                 이메일 수신 동의
               </label>
-              <div class="notification-message notification-message-status">
-                <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#info-fill"></use>
-                </svg>
-                <span class="notification-message__text">수신 동의 시에만, 입찰정보 일일 리포트를 메일로 받으실 수 있습니다.</span>
-              </div>
+            </div>
+            <div class="notification-message notification-message--loading">
+              <svg class="notification-message__icon svg-icon" aria-hidden="true">
+                <use xlink:href="#info-fill"></use>
+              </svg>
+              <span class="notification-message__text">수신 동의 시에만, 입찰정보 일일 리포트를 메일로 받으실 수 있습니다.</span>
             </div>
           </div>
-        </form>
-      </div>
-      <!-- // modal__body -->
-
-      <!-- modal__foot -->
-      <div class="modal__foot">
-        <div class="modal__foot-main-buttons">
-          <button class="button button--link button--lg">취소</button>
-          <button class="button button--primary button--lg">다음</button>
         </div>
-      </div>
-      <!-- // modal__foot -->
-
+      </form>
     </div>
+    <!-- // modal__body -->
+
+    <!-- modal__foot -->
+    <div class="modal__foot">
+      <div class="modal__foot-main-buttons">
+        <button class="button button--link button--lg">취소</button>
+        <button class="button button--primary button--lg">다음</button>
+      </div>
+    </div>
+    <!-- // modal__foot -->
+
   </div>
 
   <script src="../../dist/js/main.bundle.js"></script>

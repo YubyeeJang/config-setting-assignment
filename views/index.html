@@ -86,114 +86,121 @@
           </div>
         </div>
         <div class="breadcrumb">
-          <span>유저정보</span>
-        </div>
-        <div class="head_title">
-          <h2 class="heading-04 ">유저 정보</h2>
+          <span class="breadcrumb__text">유저정보</span>
         </div>
       </header>
 
       <!-- body -->
       <main class="body">
-        <form class="form__body">
-          <ul class="form__list">
-            <li class="form__item">
-              <label for="id" class="form__label">
-                <span class="text-input--essential">*</span>
-                <span class="form__label-text">아이디</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="id" id="id" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="passward" class="form__label">
-                <span class="text-input--essential">*</span>
-                <span class="form__label-text">비밀번호</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="passward" id="id" class="text-input text-input--lg">
-                  <button class="button button--support button--lg">비밀번호 변경</button>
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="name" class="form__label">
-                <span class="text-input--essential">*</span>
-                <span class="form__label-text">이름</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="text" id="name" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="group" class="form__label">
-                <span class="text-input--essential"></span>
-                <span class="form__label-text">그룹</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="text" id="group" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="tel" class="form__label">
-                <span class="text-input--essential">*</span>
-                <span class="form__label-text">전화번호</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="tel" id="tel" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="email" class="form__label">
-                <span class="text-input--essential"></span>
-                <span class="form__label-text">이메일</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="email" id="email" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label for="description" class="form__label">
-                <span class="text-input--essential"></span>
-                <span class="form__label-text">설명</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="text" id="description" class="text-input text-input--lg">
-                </div>
-              </div>
-            </li>
-            <li class="form__item">
-              <label class="form__label">
-                <span class="text-input--essential"></span>
-                <span class="form__label-text">이메일 수신 동의</span>
-              </label>
-              <div class="form__detail">
-                <div class="form__detail-item">
-                  <input type="checkbox" id="email-agree" class="checkbox__input">
-                  <label for="email-agree" class="checkbox__label">수신 동의함</label>
-                  <div class="notification-message notification-message--info">
-                    <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                      <use xlink:href="#info-fill"></use>
-                    </svg>
-                    <span class="notification-message__text">수신 동의 시에만, 입찰정보 일일 리포트를 메일로 받으실 수 있습니다. </span>
+        <div class="body_title">
+          <h2 class="heading-04">유저 정보</h2>
+        </div>
+        <div class="form">
+
+        </div>
+        <form class="form">
+          <div class="form__body">
+            <ul class="form__list">
+              <li class="form__item">
+                <label for="id" class="form__label">
+                  <span class="text-input--essential">*</span>
+                  <span class="form__label-text">아이디</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="id" id="id" class="text-input text-input--lg">
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="form__item">
+                <label for="passward" class="form__label">
+                  <span class="text-input--essential">*</span>
+                  <span class="form__label-text">비밀번호</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="passward" id="id" class="text-input text-input--lg">
+                    <button class="button button--support button--lg">비밀번호 변경</button>
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label for="name" class="form__label">
+                  <span class="text-input--essential">*</span>
+                  <span class="form__label-text">이름</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="text" id="name" class="text-input text-input--lg">
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label for="group" class="form__label">
+                  <span class="text-input--essential"></span>
+                  <span class="form__label-text">그룹</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="text" id="group" class="text-input text-input--lg">
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label for="tel" class="form__label">
+                  <span class="text-input--essential">*</span>
+                  <span class="form__label-text">전화번호</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="tel" id="tel" class="text-input text-input--lg">
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label for="email" class="form__label">
+                  <span class="text-input--essential"></span>
+                  <span class="form__label-text">이메일</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="email" id="email" class="text-input text-input--lg">
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label for="description" class="form__label">
+                  <span class="text-input--essential"></span>
+                  <span class="form__label-text">설명</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <input type="text" id="description" class="text-input text-input--lg">
+                  </div>
+                </div>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="text-input--essential"></span>
+                  <span class="form__label-text">이메일 수신 동의</span>
+                </label>
+                <div class="form__detail">
+                  <div class="form__detail-item">
+                    <div class="checkbox">
+                      <input type="checkbox" id="email-agree" class="checkbox__input">
+                      <label for="email-agree" class="checkbox__label">수신 동의함</label>
+                    </div>
+                    <div class="notification-message notification-message--info">
+                      <svg class="notification-message__icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#info-fill"></use>
+                      </svg>
+                      <span class="notification-message__text">수신 동의 시에만, 입찰정보 일일 리포트를 메일로 받으실 수 있습니다. </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
           <div class="form__foot">
             <button class="button button--danger button--lg">초기화</button>
             <button class="button button--tertiary button--lg">회원탈퇴</button>
